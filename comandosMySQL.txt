@@ -1,0 +1,20 @@
+CREATE TABLE `tbl_produtos` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `preco` double DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+INSERT INTO `tbl_produtos` (`id`, `nome`, `preco`) VALUES
+(1, 'Fanta 2l', 3.55),
+(3, 'Pepsi', 4.49),
+(4, 'Arroz', 2.99);
+
+
+ALTER TABLE `tbl_produtos`
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `tbl_produtos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
